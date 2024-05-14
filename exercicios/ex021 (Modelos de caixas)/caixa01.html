@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixa</title>
+    <style>
+        h1 { /* box-level */
+
+            /* display: inline; deixo meu H1 inline-level */ 
+
+            background-color: gray;
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid darkgrey;
+
+            padding: 10px;
+
+            margin: 20px auto 40px auto;
+            
+            outline: 10px groove black;
+
+            /* Em todas as tags estou ultilizando short hand*/
+
+        }
+        
+        a { /* inline-level */
+
+            /* display: block; transformo meu inline-level em box-level  */
+
+            border: 2px solid red;
+
+            padding: 2px;
+
+        }
+
+        p {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        /* display: inline-block; vai continuar sendo iline mas vai ter características de bloco. */
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

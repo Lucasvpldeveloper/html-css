@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../ex018 (Usando o google fontes )"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ex017 (Famílias de fontes com CSS)"
+	}
+}

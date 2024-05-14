@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "relogio";
+    src: url("fontes/coolvetica\ compressed\ hv.otf") format("opentype");
+}
+
+#background {
+    width: 1100px;
+    height: 200px;
+    background-image: linear-gradient(to right, orange, rgb(255, 115, 0));
+    margin: auto;
+    text-align: center;
+    font-family: "relogio";
+    font-size: 10em;
+      
+}
+
+h2 {
+    
+    margin-left: 400px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 700px;
+}
+
+img {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+.foto img {
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.legenda {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100px;
+    background-color: orangered;
+    color: white;
+    padding: 5px;
+    transition: bottom 0.3s;
+    pointer-events: none;
+    opacity: 0;
+
+}
+
+.foto:hover .legenda {
+    bottom: 0;
+    opacity: 1;
+}
+
+.foto p {
+    margin-top: 5px;
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    font-size: 2em;
+}
+
+.lista:visited {
+    color: darkred;
+    text-decoration: none;
+}
+
+a {
+    color: orangered;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+a:active {
+    color: blueviolet;
+}
+
+a::before {
+    content: '↪ ';
+}
+
+a::after {
+    content: ' ↩';
+}
