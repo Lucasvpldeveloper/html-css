@@ -16,14 +16,34 @@
         border-collapse: collapse;
     }
 
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+        border: 1px solid black;
+    }
+
     td,th {
         padding: 10px;
         border: 1px solid black;
     }
 
+    .populacao {
+        width: 100px;
+    }
+
     thead, tfoot {
         color: white;
         background-color: gray;
+    }
+
+    tbody > tr:nth-child(odd) { /* 2n-1 */
+        background-color: rgba(173, 216, 230, 0.516);
+    }
+
+    tbody > tr:nth-child(even) { /* 2n */
+        background-color: lightgray;
     }
 
     td.num {
@@ -38,6 +58,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTON (legenda)
             THEAD
                 TR, TD, TH
             TBODY
@@ -46,10 +67,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" class="populacao">População</th>
             </tr>
         </thead>
 
@@ -166,7 +188,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
