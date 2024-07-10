@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*print, tablet, desktop e tv */
+
+@media print {
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main > h1 {
+        color: black;
+        text-shadow: none;
+    }
+
+    main::after {
+        content: "Essa impressora foi retirada do site de www.lucasvpl.com";
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
