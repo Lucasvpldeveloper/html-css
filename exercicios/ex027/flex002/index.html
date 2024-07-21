@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexible Box</title>
+    <title>Display-flex</title>
+</head>
+<body>
     <style>
-        div.conteiner {
+        main.conteiner {
             background-color: lightsalmon;
-
+            
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: row-reverse;
         }
 
-        div.item {
+        main > div.alfabeto {
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
             padding: 10px;
         }
     </style>
-</head>
-<body>
-    <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-    </div>
+    <main class="conteiner">
+        <div class="alfabeto">A</div>
+        <div class="alfabeto">B</div>
+        <div class="alfabeto">C</div>
+        <div class="alfabeto">D</div>
+        <div class="alfabeto">E</div>
+        <div class="alfabeto">F</div>
+        <div class="alfabeto">G</div>
+    </main>
 </body>
 </html>
